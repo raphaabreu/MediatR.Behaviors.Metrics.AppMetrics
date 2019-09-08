@@ -5,7 +5,7 @@ namespace MediatR
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddMediatRAppMetrics(this IServiceCollection services)
+        public static IServiceCollection AddMediatorMetrics(this IServiceCollection services)
         {
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AppMetricsBehavior<,>));
 
