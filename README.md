@@ -1,1 +1,1 @@
-# MediatR.Behaviours.Metrics.AppMetrics
+# MediatR.Behaviors.Metrics.AppMetrics

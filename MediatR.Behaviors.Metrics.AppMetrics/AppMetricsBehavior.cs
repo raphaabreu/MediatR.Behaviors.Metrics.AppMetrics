@@ -3,13 +3,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using App.Metrics;
 
-namespace MediatR.Behaviours.Metrics.AppMetrics
+namespace MediatR.Behaviors.Metrics.AppMetrics
 {
-    public class AppMetricsBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+    public class AppMetricsBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {
         private readonly IMetricsRoot _metrics;
 
-        public AppMetricsBehaviour(IMetricsRoot metrics)
+        public AppMetricsBehavior(IMetricsRoot metrics)
         {
             _metrics = metrics;
         }

@@ -1,4 +1,4 @@
-﻿using MediatR.Behaviours.Metrics.AppMetrics;
+﻿using MediatR.Behaviors.Metrics.AppMetrics;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MediatR
@@ -7,7 +7,7 @@ namespace MediatR
     {
         public static IServiceCollection AddMediatRAppMetrics(this IServiceCollection services)
         {
-            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AppMetricsBehaviour<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AppMetricsBehavior<,>));
 
             return services;
         }

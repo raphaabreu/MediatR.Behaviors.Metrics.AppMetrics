@@ -2,7 +2,7 @@
 using App.Metrics.Meter;
 using App.Metrics.Timer;
 
-namespace MediatR.Behaviours.Metrics.AppMetrics
+namespace MediatR.Behaviors.Metrics.AppMetrics
 {
     internal static class MetricsOptions
     {

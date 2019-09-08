@@ -7,10 +7,10 @@
     <Company>Raphael Lorenzeto de Abreu</Company>
     <Copyright>Raphael Lorenzeto de Abreu</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/raphaabreu/MediatR.Behaviours.Metrics.AppMetrics</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/raphaabreu/MediatR.Behaviours.Metrics.AppMetrics</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/raphaabreu/MediatR.Behaviors.Metrics.AppMetrics</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/raphaabreu/MediatR.Behaviors.Metrics.AppMetrics</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
-    <PackageTags>mediator appmetrics metrics behaviours</PackageTags>
+    <PackageTags>mediator appmetrics metrics behaviors</PackageTags>
     <Description>Adds basic instrumentation to the mediator request pipeline. Meters for total and failed requests and for execution time.</Description>
   </PropertyGroup>
 
