@@ -27,7 +27,7 @@ namespace MediatR.Behaviors.Metrics.AppMetrics
                 }
                 catch (Exception ex)
                 {
-                    _metrics.Measure.Meter.Mark(MetricsOptions.MEDIATOR_REQUEST_FAILED, new MetricTags(new string[] { "request", "exception" }, new string[] { request.GetType().Name, ex.GetType().Name }));
+                    _metrics.Measure.Meter.Mark(MetricsOptions.MEDIATOR_REQUEST_EXCEPTION, new MetricTags(new string[] { "request", "exception" }, new string[] { request.GetType().Name, ex.GetType().FullName }));
                     throw;
                 }
             }

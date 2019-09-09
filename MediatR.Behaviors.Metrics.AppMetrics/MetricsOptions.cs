@@ -23,9 +23,9 @@ namespace MediatR.Behaviors.Metrics.AppMetrics
             Context = "application"
         };
 
-        public static readonly MeterOptions MEDIATOR_REQUEST_FAILED = new MeterOptions
+        public static readonly MeterOptions MEDIATOR_REQUEST_EXCEPTION = new MeterOptions
         {
-            Name = "Mediator Request Failed",
+            Name = "Mediator Request Exception",
             MeasurementUnit = App.Metrics.Unit.Requests,
             RateUnit = TimeUnit.Seconds,
             Context = "application"
