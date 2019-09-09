@@ -18,8 +18,8 @@ namespace MediatR.Behaviors.Metrics.AppMetrics
         {
             var tags = new MetricTags("request", request.GetType().Name);
 
-            _metrics.Measure.Meter.Mark(MetricsOptions.MEDIATOR_REQUEST, tags);
-            using (_metrics.Measure.Timer.Time(MetricsOptions.MEDIATOR_REQUEST_EXECUTION_TIMER, tags))
+            _metrics.Measure.Meter.Mark(MetricsOptions.MEDIATOR_REQUESTS, tags);
+            using (_metrics.Measure.Timer.Time(MetricsOptions.MEDIATOR_REQUESTS_EXECUTION_TIMER, tags))
             {
                 try
                 {
@@ -27,7 +27,7 @@ namespace MediatR.Behaviors.Metrics.AppMetrics
                 }
                 catch (Exception ex)
                 {
-                    _metrics.Measure.Meter.Mark(MetricsOptions.MEDIATOR_REQUEST_EXCEPTION, new MetricTags(new string[] { "request", "exception" }, new string[] { request.GetType().Name, ex.GetType().FullName }));
+                    _metrics.Measure.Meter.Mark(MetricsOptions.MEDIATOR_REQUESTS_EXCEPTIONS, new MetricTags(new string[] { "request", "exception" }, new string[] { request.GetType().Name, ex.GetType().FullName }));
                     throw;
                 }
             }

@@ -12,7 +12,7 @@
     <RepositoryType>GIT</RepositoryType>
     <PackageTags>mediator appmetrics metrics behaviors</PackageTags>
     <Description>Adds basic instrumentation to the mediator request pipeline. Meters for total and failed requests and for execution time.</Description>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
